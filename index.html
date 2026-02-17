@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link in Bio | Eko Siswoyo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Interactive Canvas Background -->
+    <canvas id="grid-canvas"></canvas>
+
+    <div class="scanlines"></div>
+
+    <main class="container">
+      <!-- Top Info Bar -->
+      <div class="top-bar">
+        <div class="greeting-box">
+          <span id="greeting-text">Hello World</span>
+        </div>
+        <div class="clock-box" id="clock-display">00:00:00</div>
+      </div>
+
+      <!-- Theme Switcher -->
+      <div class="theme-switcher">
+        <button
+          class="theme-btn active"
+          data-theme="default"
+          title="Default Interface"
+        >
+          CMD
+        </button>
+        <button class="theme-btn" data-theme="light" title="Light Mode">
+          LGT
+        </button>
+        <button class="theme-btn" data-theme="dracula" title="Dracula Theme">
+          DRC
+        </button>
+      </div>
+
+      <header class="profile-section">
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span class="status-text">SYSTEM ONLINE</span>
+        </div>
+
+        <div class="profile-img-container">
+          <!-- User can replace this src with their own memoji -->
+          <img
+            src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Man%20Technologist.png"
+            alt="Profile Memoji"
+            id="profile-avatar"
+          />
+        </div>
+
+        <div class="profile-info">
+          <h1 class="name">EKO<span class="accent">.SIS</span></h1>
+          <div class="code-block">
+            <span class="line-number">01</span>
+            <span class="keyword">class</span>
+            <span class="class-name">Engineer</span> {<br />
+            <span class="line-number">02</span> &nbsp;&nbsp;stack: [<span
+              class="string"
+              >'FullStack'</span
+            >, <span class="string">'Database Administrator'</span>];<br />
+            <span class="line-number">03</span> }
+          </div>
+        </div>
+      </header>
+
+      <nav class="links-section">
+        <a href="https://ekosiswoyo.my.id" class="link-item">
+          <div class="link-content">
+            <span class="link-icon"
+              ><i class="fa-solid fa-folder-open"></i
+            ></span>
+            <span class="link-text">./profile</span>
+          </div>
+          <div class="link-meta">DIR</div>
+        </a>
+
+        <a href="https://cleancv.ekosiswoyo.my.id" class="link-item">
+          <div class="link-content">
+            <span class="link-icon"
+              ><i class="fa-solid fa-folder-open"></i
+            ></span>
+            <span class="link-text">./clean-cv</span>
+          </div>
+          <div class="link-meta">PRTF</div>
+        </a>
+
+        <a href="https://code.ekosiswoyo.my.id" class="link-item">
+          <div class="link-content">
+            <span class="link-icon"
+              ><i class="fa-solid fa-folder-open"></i
+            ></span>
+            <span class="link-text">./code</span>
+          </div>
+          <div class="link-meta">PRTF</div>
+        </a>
+
+        <!-- <a href="https://github.com/ekosiswoyo" class="link-item">
+          <div class="link-content">
+            <span class="link-icon"><i class="fa-brands fa-github"></i></span>
+            <span class="link-text">git_repository</span>
+          </div>
+          <div class="link-meta">LNK</div>
+        </a>
+
+        <a href="https://id.linkedin.com/in/eko-siswoyo" class="link-item">
+          <div class="link-content">
+            <span class="link-icon"><i class="fa-brands fa-linkedin"></i></span>
+            <span class="link-text">linkedin_profile</span>
+          </div>
+          <div class="link-meta">LNK</div>
+        </a> -->
+
+        <a href="mailto:contact@ekosiswoyo.my.id" class="link-item">
+          <div class="link-content">
+            <span class="link-icon"
+              ><i class="fa-solid fa-paper-plane"></i
+            ></span>
+            <span class="link-text">init_contact()</span>
+          </div>
+          <div class="link-meta">EXE</div>
+        </a>
+      </nav>
+
+      <!-- Social Media Section -->
+      <div class="socials-container">
+        <div class="socials-label">Connect:</div>
+        <div class="socials-grid">
+          <a
+            href="https://www.instagram.com/ekoosiswoyo"
+            class="social-btn"
+            aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/eko-siswoyo"
+            class="social-btn"
+            aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/ekosiswoyo"
+            class="social-btn"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+
+      <footer class="system-footer">
+        <div class="footer-line">
+          <span>CPU: 12%</span>
+          <span>MEM: 402MB</span>
+          <span>V.2.1.0</span>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
